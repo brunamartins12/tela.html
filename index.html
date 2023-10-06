@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Tela se mexendo</title>
+  <style>
+    body {
+      background-color: #000;
+      overflow: hidden;
+    }
+    #tela {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("https://picsum.photos/id/200/800/600");
+      background-size: cover;
+      background-position: center;
+      animation: move 10s infinite alternate;
+    }
+    @keyframes move {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
 <body>
-
-<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-
+  <div id="tela"></div>
 </body>
 </html>
-
-
