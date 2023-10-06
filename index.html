@@ -1,37 +1,20 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tela </title>
-  <style>
-    body {
-      background-color: #000;
-      overflow: hidden;
-    }
-    #tela {
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-     
-      background-size: cover;
-      background-position: center;
-      animation: move 10s infinite alternate;
-    }
-    @keyframes move {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(50%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-  </style>
+  <title>Quiz</title>
 </head>
 <body>
-  <div id="tela"></div>
+  <h1>Quiz</h1>
+  <ul>
+    <li>What is the capital of France?</li>
+    <li>What is the square root of 144?</li>
+    <li>What is the difference between a tortilla and a taco?</li>
+  </ul>
+  <form>
+    <input type="text" name="answer1">
+    <input type="text" name="answer2">
+    <input type="text" name="answer3">
+    <input type="submit" value="Submit">
+  </form>
 </body>
-</html>
